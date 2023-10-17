@@ -1,6 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Hello from '../components/hello.astro'
+import { Button } from '../components/Button.tsx'
+
+const name = "Astro"
+const label  = "确定"
 ---
 
 <Layout title="Welcome to Astro.">
@@ -60,7 +65,14 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+
+
+	<Button label={label}  />
+	<Hello greeting="你好" name="朋友" />
+
+	<p>Read more <a href="/about/">about</a> Astro!</p>
 	</main>
+
 </Layout>
 
 <style>
